@@ -8,7 +8,7 @@ url = "https://forms.wayne.edu/covid-19-screening/"
 file = open("login.txt")
 fileArr = file.read().splitlines() 
 
-accessid = fileArr[0];pwd = fileArr[1];phonenumber = fileArr[2]
+accessid,pwd,phonenumber = fileArr
 
 def login():
     loginform = {"accessid": accessid, "passwd": pwd, "submit": "Login"}
